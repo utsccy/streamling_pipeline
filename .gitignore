@@ -1,0 +1,6 @@
+target/
+data/output/*.jsonl
+data/connect.offsets
+data/kafka-streams-state/
+*.log
+
