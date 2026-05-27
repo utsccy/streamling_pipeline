@@ -1,0 +1,38 @@
+| Column Name                                    | Recommended Business Description                                                                 |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `tddssbidec_cal_fiscal_month_nb`               | Fiscal month number associated with the reported underwriting or quote activity.                 |
+| `tddssbidec_cal_fiscal_period_cd`              | Fiscal period code used to identify the accounting/reporting period for the record.              |
+| `tddwi_rule_cd`                                | Code representing the underwriting rule or referral reason applied to the quote or policy.       |
+| `tddssbidec_caoper_business_operation_tx`      | Commercial Auto business operation classification for the quote or policy.                       |
+| `tddssbidec_caoper_light_class_rating_cd`      | Rating code used to classify light commercial auto operations.                                   |
+| `tddssbidec_caoper_segment_cd`                 | Segment code identifying the Commercial Auto operation segment.                                  |
+| `tddssbidec_cploper_class_cd`                  | CPL operation class code associated with the quote or policy.                                    |
+| `tddssbidec_cploper_class_industry_segment_cd` | Industry segment code associated with the CPL operation class.                                   |
+| `pol_quote_channel_incoming_rep_de`            | Incoming channel or representative description through which the policy or quote was received.   |
+| `tddwi_rule_de`                                | Description of the underwriting rule or referral reason applied to the quote or policy.          |
+| `pol_region_de`                                | Region where the policy was written or submitted.                                                |
+| `pol_jurisdiction_de`                          | Jurisdiction associated with the policy or quote.                                                |
+| `tddssbideca_decline_ineligible_industry_nb`   | Number of quotes declined because the risk belongs to an ineligible industry.                    |
+| `tddssbideca_decline_licensing_nb`             | Number of quotes declined due to licensing-related issues.                                       |
+| `tddssbideca_decline_uw_nb`                    | Number of quotes declined due to underwriting decision or underwriting eligibility rules.        |
+| `tddssbideca_decline_vehreq_nb`                | Number of quotes declined due to vehicle restriction requirements.                               |
+| `tddssbideca_nottaken_otherpol_nb`             | Number of quotes not taken because another policy was selected or used.                          |
+| `tddssbideca_nottaken_placedelsewhere_nb`      | Number of quotes not taken because coverage was placed with another insurer or provider.         |
+| `tddssbideca_nottaken_risksold_nb`             | Number of quotes not taken because the risk was sold.                                            |
+| `tddssbideca_nottaken_separation_nb`           | Number of quotes not taken due to separation-related reasons.                                    |
+| `tddssbideca_nottaken_serv_nb`                 | Number of quotes not taken due to service-related reasons.                                       |
+| `tddssbideca_nottaken_cov_nb`                  | Number of quotes not taken due to coverage-related reasons.                                      |
+| `tddssbideca_nottaken_death_nb`                | Number of quotes not taken due to death-related reasons.                                         |
+| `tddssbideca_nottaken_misquotedbyinsurer_nb`   | Number of quotes not taken because the insurer provided an incorrect quote.                      |
+| `tddssbideca_nottaken_moving_nb`               | Number of quotes not taken because the customer or risk location was moving.                     |
+| `tddssbideca_nottaken_noneed_nb`               | Number of quotes not taken because the customer no longer needed coverage.                       |
+| `tddssbideca_nottaken_other_nb`                | Number of quotes not taken for reasons not classified under other categories.                    |
+| `tddssbideca_nottaken_policywritten_nb`        | Number of quotes not taken because a policy was already written.                                 |
+| `tddssbideca_nottaken_price_nb`                | Number of quotes not taken due to price or premium concerns.                                     |
+| `tddssbideca_nottaken_prod_nb`                 | Number of quotes not taken due to product fit, product availability, or product-related reasons. |
+| `tddssbideca_nottaken_totloss_nb`              | Number of quotes not taken due to total loss-related reasons.                                    |
+| `tddssbideca_nottaken_tot_other_nb`            | Total number of quotes not taken due to other non-price, non-product, or non-service reasons.    |
+| `tddssbideca_other_quoted_nb`                  | Number of quotes that were successfully quoted but classified under other quote outcomes.        |
+| `tddssbideca_decline_nb`                       | Total number of submitted quotes that were declined.                                             |
+| `tddssbideca_other_withdrawn_nb`               | Number of quotes withdrawn for reasons other than standard decline or not-taken outcomes.        |
+| `tddssbidec_product_cd`                        | Product code identifying the insurance product associated with the quote or policy.              |
