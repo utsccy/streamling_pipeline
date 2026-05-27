@@ -1,36 +1,30 @@
-| Column Name                                     | Recommended Business Description                                                                           |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `tddssbidpq_fiscal_period_cd`                   | Fiscal period code associated with the digital quote record.                                               |
-| `accpn_pholder_company_name_tx`                 | Company name of the primary account or policy holder.                                                      |
-| `accpn_pholder_email_home_tx`                   | Home email address of the primary account or policy holder.                                                |
-| `accpn_pholder_full_name_tx`                    | Full name of the primary account or policy holder.                                                         |
-| `accpn_pholder_phone_work_no`                   | Work phone number of the primary account or policy holder.                                                 |
-| `tddssbidpq_bind_after_first_email_in`          | Indicator showing whether the quote was bound after the first email interaction.                           |
-| `tddssbidpq_bind_after_second_email_in`         | Indicator showing whether the quote was bound after the second email interaction.                          |
-| `tddssbidpq_cal_fiscal_month_nb`                | Fiscal month number associated with the digital quote activity.                                            |
-| `tddssbidpq_cal_fiscal_year_nb`                 | Fiscal year associated with the digital quote activity.                                                    |
-| `tddssbidpq_call_back_after_first_email_in`     | Indicator showing whether a callback occurred after the first email interaction.                           |
-| `tddssbidpq_call_back_after_second_email_in`    | Indicator showing whether a callback occurred after the second email interaction.                          |
-| `pol_quote_channel_incoming_cd`                 | Code identifying the incoming channel through which the quote submission was received.                     |
-| `pol_cauto_operation_1_segment_de`              | Industry segment description for the first Commercial Auto operation associated with the policy or quote.  |
-| `pol_cauto_operation_2_segment_de`              | Industry segment description for the second Commercial Auto operation associated with the policy or quote. |
-| `pol_cauto_operation_3_segment_de`              | Industry segment description for the third Commercial Auto operation associated with the policy or quote.  |
-| `pol_cpl_operation_1_class_industry_segment_cd` | Industry segment code for the first CPL operation class associated with the policy or quote.               |
-| `pol_cpl_operation_2_class_industry_segment_cd` | Industry segment code for the second CPL operation class associated with the policy or quote.              |
-| `pol_cpl_operation_3_class_industry_segment_cd` | Industry segment code for the third CPL operation class associated with the policy or quote.               |
-| `tddssbidpq_quote_updated_dt`                   | Date on which the digital quote record was last updated.                                                   |
-| `tddssbidpq_customer_type_tx`                   | Customer type classification, such as new customer or existing customer.                                   |
-| `tddssbidpq_quote_drop_reason_tx`               | Reason why the digital quote was dropped or abandoned.                                                     |
-| `tddssbidpq_first_email_sent_in`                | Indicator showing whether the first email was sent for the digital quote.                                  |
-| `hfw_delivery_dt`                               | Delivery date of the Hive Framework data extract or processing batch.                                      |
-| `hfw_cal_period_part`                           | Fiscal period partition used by Hive Framework for data storage or processing.                             |
-| `pol_region_de`                                 | Region where the policy or quote was written or submitted.                                                 |
-| `tddssbidpq_initial_pq_in`                      | Indicator showing whether the record represents an initial partial quote.                                  |
-| `pol_line_cd`                                   | Policy line code identifying the insurance line of business, such as Auto, COAU, COPL, or Home.            |
-| `pol_jurisdiction_de`                           | Jurisdiction associated with the policy or quote for reporting purposes.                                   |
-| `pol_transaction_no`                            | Transaction number assigned to the policy or quote transaction.                                            |
-| `policy_version_key`                            | Unique key identifying a specific version of a policy.                                                     |
-| `pol_product_reporting_de`                      | Product reporting description used to classify the policy or quote for business reporting.                 |
-| `tddssbidpq_quote_status_after_first_email_tx`  | Quote status after the first email interaction.                                                            |
-| `tddssbidpq_quote_status_after_second_email_tx` | Quote status after the second email interaction.                                                           |
-| `policy_key`                                    | Unique policy identifier; the same policy may have multiple versions linked to this key.                   |
+Column Name	Recommended Column Business Name	Recommended Column Business Description
+accpn_pholder_business_tdp_tdsbb_in	Primary Account Holder Business Banking Product Indicator	Indicates whether the primary account holder has a Business Banking product relationship.
+accpn_pholder_business_tdp_tpb_in	Primary Account Holder Personal Banking Product Indicator	Indicates whether the primary account holder has a Personal Banking product relationship.
+accpn_pholder_business_tdp_tdina_in	Primary Account Holder Home and Auto Product Indicator	Indicates whether the primary account holder has a Home and Auto insurance product relationship.
+accpn_pholder_business_tdp_tdil_in	Primary Account Holder Life and Health Product Indicator	Indicates whether the primary account holder has a Life and Health insurance product relationship.
+accpn_pholder_business_tdp_tdwealth_in	Primary Account Holder Wealth Product Indicator	Indicates whether the primary account holder has a Wealth product relationship.
+pol_fac_trx_type_cd	Policy Face Transaction Type Code	Code identifying the policy face transaction type, such as cancellation, renewal, rewrite, or other policy transaction categories.
+effective_month_nb	Effective Month Number	Month number of the policy effective date.
+effective_year_nb	Effective Year Number	Year number of the policy effective date.
+entry_month_nb	Entry Month Number	Month number when the policy or transaction record was entered.
+entry_year_nb	Entry Year Number	Year number when the policy or transaction record was entered.
+fiscal_month_nb	Fiscal Month Number	Fiscal month number associated with the policy, quote, or transaction record for reporting purposes.
+fiscal_period_cd	Fiscal Period Code	Fiscal period code used to group the record into a financial or reporting period.
+group_segment_cd	Group Segment Code	Code identifying the group segment associated with the policy or account.
+hfw_delivery_dt	Data Delivery Date	Date when the record was delivered or processed through the Hive Framework data pipeline.
+tdssbiclcl_loyalty_discount_in	Loyalty Discount Indicator	Indicates whether a loyalty discount was applied to the policy.
+pol_term_trx_type_cd	Policy Term Transaction Type Code	Code identifying the transaction type at the policy term level, such as new business, renewal, rewrite, or cancellation.
+pol_region_cd	Policy Region Code	Code identifying the region where the policy was written or issued.
+pol_region_de	Policy Region Description	Business-readable description of the region where the policy was written or issued.
+tdssbiclcl_irca_cross_sale_in	IRCA Cross-Sale Indicator	Indicates whether the policy or account is associated with an IRCA cross-sale opportunity or outcome.
+tdssbiclcl_irca_cross_sale_term_prem_am	IRCA Cross-Sale Term Premium Amount	Term premium amount associated with the IRCA cross-sale.
+pol_jurisdiction_de	Policy Jurisdiction Description	Business-readable description of the province, territory, or jurisdiction where the policy was issued or reported.
+market_grp_cd	Market Group Code	Code identifying the market group associated with the policy, account, or customer segment.
+cploper_class_cd	Operation Class Code	Code identifying the operation class associated with the commercial policy or risk.
+cploper_class_industry_segment_cd	Operation Class Industry Segment Code	Code identifying the industry segment linked to the operation class.
+cploper_class_industry_segment_de	Operation Class Industry Segment Description	Business-readable description of the industry segment linked to the operation class.
+pol_jurisdiction_cd	Policy Jurisdiction Code	Code identifying the province, territory, or jurisdiction where the policy was issued.
+policy_version_key	Policy Version Key	Unique key identifying a specific version of a policy record.
+pol_product_reporting_cd	Reporting Product Code	Product code used to classify the policy for business reporting.
+pol_product_reporting_de	Reporting Product Description	Business-readable product description used to classify the policy for business reporting.
